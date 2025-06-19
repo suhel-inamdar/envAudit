@@ -33,10 +33,10 @@ Environment variables are critical for configuration, but it's easy to:
 ## 🛠️ Installation
 
 ```bash
-npm install -g envlens
+npm install envlens
 
-Then run it from anywhere:
-envlens
+Then run it:
+npx envlens
 
 
 🔍 **Usage**
