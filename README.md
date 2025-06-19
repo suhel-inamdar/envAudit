@@ -1,10 +1,10 @@
-# 🛡️ envAudit
+# 🛡️ envlens
 
 > Lightweight CLI tool to detect missing or unused environment variables in your Node.js projects.
 
 ---
 
-## 📦 Why use envAudit?
+## 📦 Why use envlens?
 
 Environment variables are critical for configuration, but it's easy to:
 
@@ -12,7 +12,7 @@ Environment variables are critical for configuration, but it's easy to:
 - ❌ Leave unused or outdated keys in `.env` files
 - 🚫 Accidentally deploy with incomplete env configs
 
-**`envAudit`** helps you audit these issues **without breaking your project**.
+**`envlens`** helps you audit these issues **without breaking your project**.
 
 ---
 
@@ -33,27 +33,27 @@ Environment variables are critical for configuration, but it's easy to:
 ## 🛠️ Installation
 
 ```bash
-npm install -g envaudit
+npm install -g envlens
 
 Then run it from anywhere:
-envaudit
+envlens
 
 
 🔍 **Usage**
 
 **Default: scan** .env
-npx envaudit
+npx envlens
 
 **Custom** .env **file**
-npx envaudit --env-file=.env.production
-npx envaudit --env-file=.env.staging
-npx envaudit --env-file=.env.local
+npx envlens --env-file=.env.production
+npx envlens --env-file=.env.staging
+npx envlens --env-file=.env.local
 
 📘 **Example Output**
 🔍 Scanned .env keys: DB_HOST, SECRET_KEY
 
-⚠️  [envAudit] DB_USER → Used in code ✅ but Missing in .env ❌
-ℹ️  [envAudit] SECRET_KEY → Present in .env ✅ but Unused in code ❌
+⚠️  [envlens] DB_USER → Used in code ✅ but Missing in .env ❌
+ℹ️  [envlens] SECRET_KEY → Present in .env ✅ but Unused in code ❌
 
 ✅ Scan complete: 15 files checked.
 
