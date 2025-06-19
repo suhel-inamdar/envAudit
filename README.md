@@ -35,8 +35,8 @@ Environment variables are critical for configuration, but it's easy to:
 ```bash
 npm install -g envaudit
 
-Or use directly via npx (no install needed):
-npx envaudit
+Then run it from anywhere:
+envaudit
 
 
 🔍 **Usage**
