@@ -1,6 +1,6 @@
 {
   "name": "envlens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audit your Node.js project's environment variables for missing or unused keys.",
   "main": "index.js",
   "bin": {
